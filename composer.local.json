@@ -16,7 +16,9 @@
         "x-mediawiki/echo": "^1",
         "x-mediawiki/thanks": "^1",
         "x-mediawiki/code-editor": "^1",
-        "x-mediawiki/multimedia-viewer": "^1"
+	"x-mediawiki/code-mirror": "^1",
+        "x-mediawiki/multimedia-viewer": "^1",
+	"x-mediawiki/oath-auth": "^1",
         "wikimedia-au/link-cards": "^0.4",
 	},
 	"extra": {
@@ -83,7 +85,35 @@
                                 "reference": "REL1_40"
                         }
                 }
+        },
+        {
+                "type": "package",
+                "package": {
+                        "name": "x-mediawiki/code-mirror",
+                        "type": "mediawiki-extension",
+                        "version": "1.40.0",
+                        "source": {
+                                "type": "git",
+                                "url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/CodeMirror.git",
+                                "reference": "REL1_40"
+                        }
+                }
+        },
+        {
+                "type": "package",
+                "package": {
+                        "name": "x-mediawiki/oath-auth",
+                        "type": "mediawiki-extension",
+                        "version": "1.40.0",
+                        "source": {
+                                "type": "git",
+                                "url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/OATHAuth.git",
+                                "reference": "REL1_40"
+                        }
+                }
         }
+		
+		                                                
 ]
 }
                                         
