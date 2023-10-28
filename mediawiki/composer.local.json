@@ -7,7 +7,7 @@
 		"mediawiki/page-forms": "^5.0",
 		"mediawiki/validator": "^2.0",
 		"mediawiki/data-transfer": "^1.0",
-		"mediawiki/maps": "^9.0",
+		"mediawiki/maps": "^10.0",
 		"octfx/wiki-seo": "^2.6",
 		"samwilson/flickr-importer": "^0.2",
 		"samwilson/missedpages": "dev-master",
