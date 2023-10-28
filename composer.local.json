@@ -1,0 +1,89 @@
+{
+	"require": {
+        "edwardspec/mediawiki-aws-s3": "dev-master",
+        "mediawiki/maps": "^9.0",
+        "mediawiki/matomo": "^4.0",
+        "mediawiki/page-forms": "^5.0",
+        "mediawiki/validator": "^2.0",
+        "mediawiki/data-transfer": "^1.0",
+        "mediawiki/maps": "^9.0",
+        "octfx/wiki-seo": "^2.6",
+        "samwilson/flickr-importer": "^0.2",
+        "samwilson/mediawiki-extensions-genealogy": "^2.0",
+        "samwilson/diagrams": "^0.9",
+        "samwilson/redirectmanager": "^1.0",
+        "samwilson/unlinked-wikibase": "^3.0",
+        "x-mediawiki/echo": "^1",
+        "x-mediawiki/thanks": "^1",
+        "x-mediawiki/code-editor": "^1",
+        "x-mediawiki/multimedia-viewer": "^1"
+        "wikimedia-au/link-cards": "^0.4",
+	},
+	"extra": {
+        "merge-plugin": {
+                "include": [
+                        "extensions/SyntaxHighlight_GeSHi/composer.json",
+                        "extensions/MissedPages/composer.json",
+                        "extensions/QRLite/composer.json",
+                        "extensions/AWS/composer.json",
+                        "extensions/TemplateStyles/composer.json",
+                        "extensions/OATHAuth/composer.json"
+                ]
+        }
+	},
+	"repositories": [
+        {
+                "type": "package",
+                "package": {
+                        "name": "x-mediawiki/echo",
+                        "type": "mediawiki-extension",
+                        "version": "1.40.0",
+                        "source": {
+                                "type": "git",
+                                "url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/Echo.git",
+                                "reference": "REL1_40"
+                        }
+                }
+        },
+        {
+                "type": "package",
+                "package": {
+                        "name": "x-mediawiki/thanks",
+                        "type": "mediawiki-extension",
+                        "version": "1.40.0",
+                        "source": {
+                                "type": "git",
+                                "url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/Thanks.git",
+                                "reference": "REL1_40"
+                        }
+                }
+        },
+        {
+                "type": "package",
+                "package": {
+                        "name": "x-mediawiki/code-editor",
+                        "type": "mediawiki-extension",
+                        "version": "1.40.0",
+                        "source": {
+                                "type": "git",
+                                "url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/CodeEditor.git",
+                                "reference": "REL1_40"
+                        }
+                }
+        },
+        {
+                "type": "package",
+                "package": {
+                        "name": "x-mediawiki/multimedia-viewer",
+                        "type": "mediawiki-extension",
+                        "version": "1.40.0",
+                        "source": {
+                                "type": "git",
+                                "url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/MultimediaViewer.git",
+                                "reference": "REL1_40"
+                        }
+                }
+        }
+]
+}
+                                        
