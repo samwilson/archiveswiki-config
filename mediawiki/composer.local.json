@@ -1,0 +1,229 @@
+{
+	"require": {
+		"edwardspec/mediawiki-aws-s3": "dev-master",
+		"gesinn-it/qrlite": "dev-master",
+		"mediawiki/cargo": "^3.0",
+		"mediawiki/matomo": "^4.0",
+		"mediawiki/page-forms": "^5.0",
+		"mediawiki/validator": "^2.0",
+		"mediawiki/data-transfer": "^1.0",
+		"mediawiki/maps": "^9.0",
+		"octfx/wiki-seo": "^2.6",
+		"samwilson/flickr-importer": "^0.2",
+		"samwilson/missedpages": "dev-master",
+		"samwilson/mediawiki-extensions-genealogy": "^2.0",
+		"samwilson/diagrams": "^0.9",
+		"samwilson/redirectmanager": "^1.0",
+		"samwilson/unlinked-wikibase": "^3.0",
+		"wikimedia-au/link-cards": "^0.4",
+		"x-mediawiki/echo": "^1",
+		"x-mediawiki/thanks": "^1",
+		"x-mediawiki/template-wizard": "^1",
+		"x-mediawiki/code-mirror": "^1",
+		"x-mediawiki/multimedia-viewer": "^1",
+		"x-mediawiki/display-title": "^1",
+		"x-mediawiki/template-styles": "^1",
+		"x-mediawiki/msupload": "^1",
+		"x-mediawiki/lastuserlogin": "^1",
+		"x-mediawiki/nocat": "^1",
+		"x-mediawiki/renameuser": "^1",
+		"x-mediawiki/vips-scaler": "^1",
+		"x-mediawiki/intersection": "^1"
+	},
+	"extra": {
+		"merge-plugin": {
+			"include": [
+				"extensions/SyntaxHighlight_GeSHi/composer.json",
+				"extensions/MissedPages/composer.json",
+				"extensions/QRLite/composer.json",
+				"extensions/AWS/composer.json",
+				"extensions/TemplateStyles/composer.json",
+				"extensions/OATHAuth/composer.json"
+			]
+		}
+	},
+	"repositories": [
+		{
+			"type": "package",
+			"package": {
+				"name": "x-mediawiki/nocat",
+				"type": "mediawiki-extension",
+				"version": "1.40.0",
+				"source": {
+					"type": "git",
+					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/NoCat.git",
+					"reference": "REL1_40"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "x-mediawiki/renameuser",
+				"type": "mediawiki-extension",
+				"version": "1.40.0",
+				"source": {
+					"type": "git",
+					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/Renameuser.git",
+					"reference": "REL1_40"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "x-mediawiki/vips-scaler",
+				"type": "mediawiki-extension",
+				"version": "1.40.0",
+				"source": {
+					"type": "git",
+					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/VipsScaler.git",
+					"reference": "REL1_40"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "x-mediawiki/echo",
+				"type": "mediawiki-extension",
+				"version": "1.40.0",
+				"source": {
+					"type": "git",
+					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/Echo.git",
+					"reference": "REL1_40"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "x-mediawiki/lastuserlogin",
+				"type": "mediawiki-extension",
+				"version": "1.40.0",
+				"source": {
+					"type": "git",
+					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/LastUserLogin.git",
+					"reference": "REL1_40"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "x-mediawiki/msupload",
+				"type": "mediawiki-extension",
+				"version": "1.40.0",
+				"source": {
+					"type": "git",
+					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/MsUpload.git",
+					"reference": "REL1_40"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "x-mediawiki/template-styles",
+				"type": "mediawiki-extension",
+				"version": "1.40.0",
+				"source": {
+					"type": "git",
+					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/TemplateStyles.git",
+					"reference": "REL1_40"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "x-mediawiki/intersection",
+				"type": "mediawiki-extension",
+				"version": "1.40.0",
+				"source": {
+					"type": "git",
+					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/intersection.git",
+					"reference": "REL1_40"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "x-mediawiki/display-title",
+				"type": "mediawiki-extension",
+				"version": "1.40.0",
+				"source": {
+					"type": "git",
+					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/DisplayTitle.git",
+					"reference": "REL1_40"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "x-mediawiki/thanks",
+				"type": "mediawiki-extension",
+				"version": "1.40.0",
+				"source": {
+					"type": "git",
+					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/Thanks.git",
+					"reference": "REL1_40"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "x-mediawiki/template-wizard",
+				"type": "mediawiki-extension",
+				"version": "1.40.0",
+				"source": {
+					"type": "git",
+					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/TemplateWizard.git",
+					"reference": "REL1_40"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "x-mediawiki/multimedia-viewer",
+				"type": "mediawiki-extension",
+				"version": "1.40.0",
+				"source": {
+					"type": "git",
+					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/MultimediaViewer.git",
+					"reference": "REL1_40"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "x-mediawiki/code-mirror",
+				"type": "mediawiki-extension",
+				"version": "1.40.0",
+				"source": {
+					"type": "git",
+					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/CodeMirror.git",
+					"reference": "REL1_40"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "x-mediawiki/oath-auth",
+				"type": "mediawiki-extension",
+				"version": "1.40.0",
+				"source": {
+					"type": "git",
+					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/OATHAuth.git",
+					"reference": "REL1_40"
+				}
+			}
+		}
+	]
+}
