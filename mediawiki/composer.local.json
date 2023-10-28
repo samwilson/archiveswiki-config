@@ -23,9 +23,9 @@
 		"x-mediawiki/multimedia-viewer": "^1",
 		"x-mediawiki/display-title": "^1",
 		"x-mediawiki/template-styles": "^1",
-		"x-mediawiki/msupload": "^1",
-		"x-mediawiki/lastuserlogin": "^1",
-		"x-mediawiki/nocat": "^1",
+		"x-mediawiki/ms-upload": "^1",
+		"x-mediawiki/last-user-login": "^1",
+		"x-mediawiki/no-cat": "^1",
 		"x-mediawiki/renameuser": "^1",
 		"x-mediawiki/vips-scaler": "^1",
 		"x-mediawiki/intersection": "^1"
@@ -46,7 +46,7 @@
 		{
 			"type": "package",
 			"package": {
-				"name": "x-mediawiki/nocat",
+				"name": "x-mediawiki/no-cat",
 				"type": "mediawiki-extension",
 				"version": "1.40.0",
 				"source": {
@@ -98,7 +98,7 @@
 		{
 			"type": "package",
 			"package": {
-				"name": "x-mediawiki/lastuserlogin",
+				"name": "x-mediawiki/last-user-login",
 				"type": "mediawiki-extension",
 				"version": "1.40.0",
 				"source": {
@@ -111,7 +111,7 @@
 		{
 			"type": "package",
 			"package": {
-				"name": "x-mediawiki/msupload",
+				"name": "x-mediawiki/ms-upload",
 				"type": "mediawiki-extension",
 				"version": "1.40.0",
 				"source": {
