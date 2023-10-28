@@ -12,7 +12,7 @@
 		"samwilson/flickr-importer": "^0.2",
 		"samwilson/missedpages": "dev-master",
 		"samwilson/mediawiki-extensions-genealogy": "^2.0",
-		"samwilson/diagrams": "^0.9",
+		"samwilson/diagrams": "^0.12",
 		"samwilson/redirectmanager": "^1.0",
 		"samwilson/unlinked-wikibase": "^3.0",
 		"wikimedia-au/link-cards": "^0.4",
