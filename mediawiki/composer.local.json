@@ -20,6 +20,7 @@
 		"x-mediawiki/thanks": "^1",
 		"x-mediawiki/template-wizard": "^1",
 		"x-mediawiki/code-mirror": "^1",
+		"x-mediawiki/code-editor": "^1",
 		"x-mediawiki/multimedia-viewer": "^1",
 		"x-mediawiki/display-title": "^1",
 		"x-mediawiki/template-styles": "^1",
@@ -208,6 +209,19 @@
 				"source": {
 					"type": "git",
 					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/CodeMirror.git",
+					"reference": "REL1_40"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "x-mediawiki/code-editor",
+				"type": "mediawiki-extension",
+				"version": "1.40.0",
+				"source": {
+					"type": "git",
+					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/CodeEditor.git",
 					"reference": "REL1_40"
 				}
 			}
