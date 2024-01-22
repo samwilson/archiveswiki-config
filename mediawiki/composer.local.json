@@ -16,6 +16,7 @@
 		"samwilson/redirectmanager": "^1.0",
 		"samwilson/unlinked-wikibase": "^3.0",
 		"wikimedia-au/link-cards": "^0.4",
+		"x-mediawiki/oath-auth": "^1",
 		"x-mediawiki/echo": "^1",
 		"x-mediawiki/thanks": "^1",
 		"x-mediawiki/template-wizard": "^1",
