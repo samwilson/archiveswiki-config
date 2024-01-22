@@ -251,6 +251,9 @@
 					"type": "git",
 					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/OATHAuth.git",
 					"reference": "REL1_40"
+				},
+				"extra": {
+					"installer-name": "OATHAuth"
 				}
 			}
 		}
