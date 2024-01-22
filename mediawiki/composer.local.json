@@ -16,6 +16,7 @@
 		"samwilson/redirectmanager": "^1.0",
 		"samwilson/unlinked-wikibase": "^3.0",
 		"wikimedia-au/link-cards": "^0.4",
+		"x-mediawiki/cite": "^1",
 		"x-mediawiki/oath-auth": "^1",
 		"x-mediawiki/echo": "^1",
 		"x-mediawiki/thanks": "^1",
@@ -81,6 +82,19 @@
 				"source": {
 					"type": "git",
 					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/VipsScaler.git",
+					"reference": "REL1_40"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "x-mediawiki/cite",
+				"type": "mediawiki-extension",
+				"version": "1.40.0",
+				"source": {
+					"type": "git",
+					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/Cite.git",
 					"reference": "REL1_40"
 				}
 			}
