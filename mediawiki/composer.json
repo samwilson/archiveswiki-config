@@ -1,0 +1,30 @@
+{
+	"require-dev": {
+		"ergebnis/composer-normalize": "^2",
+		"wikimedia/composer-merge-plugin": "^2"
+	},
+	"config": {
+		"allow-plugins": {
+			"composer/installers": true,
+			"ergebnis/composer-normalize": true,
+			"wikimedia/composer-merge-plugin": true
+		}
+	},
+	"extra": {
+		"merge-plugin": {
+			"include": [
+				"composer.local.json"
+			],
+			"merge-dev": false
+		}
+	},
+	"scripts": {
+		"test": [
+			"composer validate --no-check-publish",
+			"composer normalize --dry-run",
+			"composer normalize --dry-run composer.local.json",
+			"@putenv COMPOSER=composer.local.json",
+			"composer validate --no-check-publish"
+		]
+	}
+}
