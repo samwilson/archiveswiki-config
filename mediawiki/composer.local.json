@@ -19,6 +19,7 @@
 		"x-mediawiki/cite": "^1",
 		"x-mediawiki/oath-auth": "^1",
 		"x-mediawiki/echo": "^1",
+		"x-mediawiki/input-box": "^1",
 		"x-mediawiki/thanks": "^1",
 		"x-mediawiki/template-wizard": "^1",
 		"x-mediawiki/code-mirror": "^1",
@@ -109,6 +110,19 @@
 				"source": {
 					"type": "git",
 					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/Echo.git",
+					"reference": "REL1_40"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "x-mediawiki/input-box",
+				"type": "mediawiki-extension",
+				"version": "1.40.0",
+				"source": {
+					"type": "git",
+					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/InputBox.git",
 					"reference": "REL1_40"
 				}
 			}
