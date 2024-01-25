@@ -99,7 +99,7 @@
 			"package": {
 				"name": "x-mediawiki/template-styles",
 				"type": "mediawiki-extension",
-				"version": "1.40.0",
+				"version": "1.40.1",
 				"source": {
 					"type": "git",
 					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/TemplateStyles.git",
@@ -178,6 +178,13 @@
 			"composer/installers": false,
 			"ergebnis/composer-normalize": false,
 			"wikimedia/composer-merge-plugin": false
+		}
+	},
+	"extra": {
+		"merge-plugin": {
+			"include": [
+				"extensions/TemplateStyles/composer.json"
+			]
 		}
 	}
 }
