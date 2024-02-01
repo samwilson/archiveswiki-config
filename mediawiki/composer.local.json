@@ -23,6 +23,7 @@
 		"x-mediawiki/last-user-login": "^1",
 		"x-mediawiki/ms-upload": "^1",
 		"x-mediawiki/no-cat": "^1",
+		"x-mediawiki/real-me": "^1",
 		"x-mediawiki/renameuser": "^1",
 		"x-mediawiki/template-styles": "^1",
 		"x-mediawiki/template-wizard": "^1",
@@ -39,6 +40,19 @@
 				"source": {
 					"type": "git",
 					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/NoCat.git",
+					"reference": "REL1_40"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "x-mediawiki/real-me",
+				"type": "mediawiki-extension",
+				"version": "1.40.0",
+				"source": {
+					"type": "git",
+					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/RealMe.git",
 					"reference": "REL1_40"
 				}
 			}
