@@ -19,6 +19,7 @@
 		"wikimedia/css-sanitizer": "^4.0",
 		"x-mediawiki/code-mirror": "^1",
 		"x-mediawiki/display-title": "^1",
+		"x-mediawiki/gadgets": "^1",
 		"x-mediawiki/intersection": "^1",
 		"x-mediawiki/last-user-login": "^1",
 		"x-mediawiki/ms-upload": "^1",
@@ -157,6 +158,19 @@
 				"source": {
 					"type": "git",
 					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/DisplayTitle.git",
+					"reference": "REL1_40"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "x-mediawiki/gadgets",
+				"type": "mediawiki-extension",
+				"version": "1.40.0",
+				"source": {
+					"type": "git",
+					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/Gadgets.git",
 					"reference": "REL1_40"
 				}
 			}
