@@ -1,3 +1,3 @@
-mediawiki/composer.lock
-mediawiki/extensions/
-mediawiki/vendor/
+var/www/mediawiki/composer.lock
+var/www/mediawiki/extensions/
+var/www/mediawiki/vendor/
