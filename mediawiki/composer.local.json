@@ -1,7 +1,9 @@
 {
 	"require": {
+		"christian-riesen/base32": "^1.4.0",
 		"edwardspec/mediawiki-aws-s3": "dev-master",
 		"gesinn-it/qrlite": "dev-master",
+		"jakobo/hotp-php": "2.0.0",
 		"mediawiki/cargo": "^3.0",
 		"mediawiki/data-transfer": "^1.0",
 		"mediawiki/maps": "^10.0",
@@ -24,6 +26,7 @@
 		"x-mediawiki/last-user-login": "^1",
 		"x-mediawiki/ms-upload": "^1",
 		"x-mediawiki/no-cat": "^1",
+		"x-mediawiki/oathauth": "^1",
 		"x-mediawiki/real-me": "^1",
 		"x-mediawiki/renameuser": "^1",
 		"x-mediawiki/template-styles": "^1",
@@ -41,6 +44,19 @@
 				"source": {
 					"type": "git",
 					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/NoCat.git",
+					"reference": "REL1_40"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "x-mediawiki/oathauth",
+				"type": "mediawiki-extension",
+				"version": "1.40.0",
+				"source": {
+					"type": "git",
+					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/OATHAuth.git",
 					"reference": "REL1_40"
 				}
 			}
