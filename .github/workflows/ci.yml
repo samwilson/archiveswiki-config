@@ -18,10 +18,10 @@ jobs:
     - uses: actions/checkout@v3
 
     - name: Install
-      run: cd mediawiki && composer install
+      run: cd ./var/www/mediawiki && composer install
 
     - name: Test
-      run: cd mediawiki && composer test
+      run: cd ./var/www/mediawiki && composer test
 
     - name: Cache Composer packages
       id: composer-cache
