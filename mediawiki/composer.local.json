@@ -25,6 +25,7 @@
 		"x-mediawiki/intersection": "^1",
 		"x-mediawiki/last-user-login": "^1",
 		"x-mediawiki/ms-upload": "^1",
+		"x-mediawiki/multimedia-viewer": "^1",
 		"x-mediawiki/no-cat": "^1",
 		"x-mediawiki/oathauth": "^1",
 		"x-mediawiki/real-me": "^1",
@@ -122,6 +123,19 @@
 				"source": {
 					"type": "git",
 					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/MsUpload.git",
+					"reference": "REL1_40"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "x-mediawiki/multimedia-viewer",
+				"type": "mediawiki-extension",
+				"version": "1.40.0",
+				"source": {
+					"type": "git",
+					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/MultimediaViewer.git",
 					"reference": "REL1_40"
 				}
 			}
