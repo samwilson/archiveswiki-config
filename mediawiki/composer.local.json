@@ -6,10 +6,9 @@
 		"jakobo/hotp-php": "2.0.0",
 		"mediawiki/cargo": "^3.0",
 		"mediawiki/data-transfer": "^1.0",
-		"mediawiki/maps": "^10.0",
+		"mediawiki/maps": "^11.0",
 		"mediawiki/matomo": "^5.0",
 		"mediawiki/page-forms": "^5.0",
-		"mediawiki/validator": "^2.0",
 		"octfx/wiki-seo": "^2.6",
 		"samwilson/diagrams": "^0.14",
 		"samwilson/flickr-importer": "^0.2",
@@ -17,7 +16,7 @@
 		"samwilson/missedpages": "dev-master",
 		"samwilson/redirectmanager": "^1.0",
 		"samwilson/unlinked-wikibase": "^3.0",
-		"wikimedia-au/link-cards": "^0.5",
+		"wikimedia-au/link-cards": "^0.9",
 		"wikimedia/css-sanitizer": "^5.0",
 		"x-mediawiki/code-mirror": "^1",
 		"x-mediawiki/display-title": "^1",
@@ -32,8 +31,7 @@
 		"x-mediawiki/renameuser": "^1",
 		"x-mediawiki/template-styles": "^1",
 		"x-mediawiki/template-wizard": "^1",
-		"x-mediawiki/title-key": "^1",
-		"x-mediawiki/vips-scaler": "^1"
+		"x-mediawiki/title-key": "^1"
 	},
 	"repositories": [
 		{
@@ -41,11 +39,11 @@
 			"package": {
 				"name": "x-mediawiki/no-cat",
 				"type": "mediawiki-extension",
-				"version": "1.40.0",
+				"version": "1.43.0",
 				"source": {
 					"type": "git",
 					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/NoCat.git",
-					"reference": "REL1_40"
+					"reference": "REL1_43"
 				}
 			}
 		},
@@ -54,11 +52,11 @@
 			"package": {
 				"name": "x-mediawiki/oathauth",
 				"type": "mediawiki-extension",
-				"version": "1.40.0",
+				"version": "1.43.0",
 				"source": {
 					"type": "git",
 					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/OATHAuth.git",
-					"reference": "REL1_40"
+					"reference": "REL1_43"
 				}
 			}
 		},
@@ -67,11 +65,11 @@
 			"package": {
 				"name": "x-mediawiki/real-me",
 				"type": "mediawiki-extension",
-				"version": "1.40.0",
+				"version": "1.43.0",
 				"source": {
 					"type": "git",
 					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/RealMe.git",
-					"reference": "REL1_40"
+					"reference": "REL1_43"
 				}
 			}
 		},
@@ -80,24 +78,11 @@
 			"package": {
 				"name": "x-mediawiki/renameuser",
 				"type": "mediawiki-extension",
-				"version": "1.40.0",
+				"version": "1.43.0",
 				"source": {
 					"type": "git",
 					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/Renameuser.git",
-					"reference": "REL1_40"
-				}
-			}
-		},
-		{
-			"type": "package",
-			"package": {
-				"name": "x-mediawiki/vips-scaler",
-				"type": "mediawiki-extension",
-				"version": "1.40.0",
-				"source": {
-					"type": "git",
-					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/VipsScaler.git",
-					"reference": "REL1_40"
+					"reference": "REL1_43"
 				}
 			}
 		},
@@ -106,11 +91,11 @@
 			"package": {
 				"name": "x-mediawiki/last-user-login",
 				"type": "mediawiki-extension",
-				"version": "1.40.0",
+				"version": "1.43.0",
 				"source": {
 					"type": "git",
 					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/LastUserLogin.git",
-					"reference": "REL1_40"
+					"reference": "REL1_43"
 				}
 			}
 		},
@@ -119,11 +104,11 @@
 			"package": {
 				"name": "x-mediawiki/ms-upload",
 				"type": "mediawiki-extension",
-				"version": "1.40.0",
+				"version": "1.43.0",
 				"source": {
 					"type": "git",
 					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/MsUpload.git",
-					"reference": "REL1_40"
+					"reference": "REL1_43"
 				}
 			}
 		},
@@ -132,11 +117,11 @@
 			"package": {
 				"name": "x-mediawiki/multimedia-viewer",
 				"type": "mediawiki-extension",
-				"version": "1.40.0",
+				"version": "1.43.0",
 				"source": {
 					"type": "git",
 					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/MultimediaViewer.git",
-					"reference": "REL1_40"
+					"reference": "REL1_43"
 				}
 			}
 		},
@@ -149,7 +134,7 @@
 				"source": {
 					"type": "git",
 					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/TemplateStyles.git",
-					"reference": "REL1_40"
+					"reference": "REL1_43"
 				}
 			}
 		},
@@ -158,11 +143,11 @@
 			"package": {
 				"name": "x-mediawiki/title-key",
 				"type": "mediawiki-extension",
-				"version": "1.40.0",
+				"version": "1.43.0",
 				"source": {
 					"type": "git",
 					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/TitleKey.git",
-					"reference": "REL1_40"
+					"reference": "REL1_43"
 				}
 			}
 		},
@@ -171,11 +156,11 @@
 			"package": {
 				"name": "x-mediawiki/intersection",
 				"type": "mediawiki-extension",
-				"version": "1.40.0",
+				"version": "1.43.0",
 				"source": {
 					"type": "git",
 					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/intersection.git",
-					"reference": "REL1_40"
+					"reference": "REL1_43"
 				}
 			}
 		},
@@ -184,11 +169,11 @@
 			"package": {
 				"name": "x-mediawiki/display-title",
 				"type": "mediawiki-extension",
-				"version": "1.40.0",
+				"version": "1.43.0",
 				"source": {
 					"type": "git",
 					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/DisplayTitle.git",
-					"reference": "REL1_40"
+					"reference": "REL1_43"
 				}
 			}
 		},
@@ -197,11 +182,11 @@
 			"package": {
 				"name": "x-mediawiki/gadgets",
 				"type": "mediawiki-extension",
-				"version": "1.40.0",
+				"version": "1.43.0",
 				"source": {
 					"type": "git",
 					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/Gadgets.git",
-					"reference": "REL1_40"
+					"reference": "REL1_43"
 				}
 			}
 		},
@@ -210,11 +195,11 @@
 			"package": {
 				"name": "x-mediawiki/template-wizard",
 				"type": "mediawiki-extension",
-				"version": "1.40.0",
+				"version": "1.43.0",
 				"source": {
 					"type": "git",
 					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/TemplateWizard.git",
-					"reference": "REL1_40"
+					"reference": "REL1_43"
 				}
 			}
 		},
@@ -223,11 +208,11 @@
 			"package": {
 				"name": "x-mediawiki/code-mirror",
 				"type": "mediawiki-extension",
-				"version": "1.40.0",
+				"version": "1.43.0",
 				"source": {
 					"type": "git",
 					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/CodeMirror.git",
-					"reference": "REL1_40"
+					"reference": "REL1_43"
 				}
 			}
 		}
