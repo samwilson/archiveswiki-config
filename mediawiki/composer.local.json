@@ -24,9 +24,7 @@
 		"x-mediawiki/intersection": "^1",
 		"x-mediawiki/last-user-login": "^1",
 		"x-mediawiki/ms-upload": "^1",
-		"x-mediawiki/multimedia-viewer": "^1",
 		"x-mediawiki/no-cat": "^1",
-		"x-mediawiki/oathauth": "^1",
 		"x-mediawiki/real-me": "^1",
 		"x-mediawiki/renameuser": "^1",
 		"x-mediawiki/template-styles": "^1",
@@ -43,19 +41,6 @@
 				"source": {
 					"type": "git",
 					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/NoCat.git",
-					"reference": "REL1_43"
-				}
-			}
-		},
-		{
-			"type": "package",
-			"package": {
-				"name": "x-mediawiki/oathauth",
-				"type": "mediawiki-extension",
-				"version": "1.43.0",
-				"source": {
-					"type": "git",
-					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/OATHAuth.git",
 					"reference": "REL1_43"
 				}
 			}
@@ -108,19 +93,6 @@
 				"source": {
 					"type": "git",
 					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/MsUpload.git",
-					"reference": "REL1_43"
-				}
-			}
-		},
-		{
-			"type": "package",
-			"package": {
-				"name": "x-mediawiki/multimedia-viewer",
-				"type": "mediawiki-extension",
-				"version": "1.43.0",
-				"source": {
-					"type": "git",
-					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/MultimediaViewer.git",
 					"reference": "REL1_43"
 				}
 			}
