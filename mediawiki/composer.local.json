@@ -10,7 +10,7 @@
 		"mediawiki/matomo": "^5.0",
 		"mediawiki/page-forms": "^5.0",
 		"octfx/wiki-seo": "^2.6",
-		"samwilson/diagrams": "^0.14",
+		"samwilson/diagrams": "^0.15",
 		"samwilson/mediawiki-extensions-genealogy": "^2.0",
 		"samwilson/missedpages": "dev-master",
 		"samwilson/redirectmanager": "^1.0",
