@@ -14,20 +14,31 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    services:
+      mysql:
+        image: mysql:8.4
+        env:
+          MYSQL_DATABASE: testdb
+          MYSQL_ROOT_PASSWORD: testpwd
+        ports:
+          - '3306:3306'
+        options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
+
     steps:
     - uses: actions/checkout@v3
 
-    - name: Install
+    - name: Composer install
       run: cd mediawiki && composer install
 
-    - name: Test
+    - name: Composer test
       run: cd mediawiki && composer test
 
-    - name: Cache Composer packages
-      id: composer-cache
-      uses: actions/cache@v3
-      with:
-        path: vendor
-        key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
-        restore-keys: |
-          ${{ runner.os }}-php-
+    - name: MediaWiki install and test
+      run:
+        git clone https://gerrit.wikimedia.org/r/mediawiki/core.git --depth=1 --branch=REL1_44 tmp_wiki
+        cd tmp_wiki
+        git submodule update --init --recursive
+        ln -s ../mediawiki/composer.local.json composer.local.json
+        composer update
+        php maintenance/run.php install --dbname=wikitestdb --dbpass=dev123dev --dbserver=127.0.0.1 --dbuser=dev --pass test123test --with-extensions TestWiki Admin
+        composer phpunit
