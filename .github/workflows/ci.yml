@@ -34,7 +34,7 @@ jobs:
       run: cd mediawiki && composer test
 
     - name: MediaWiki install and test
-      run:
+      run: |
         git clone https://gerrit.wikimedia.org/r/mediawiki/core.git --depth=1 --branch=REL1_44 tmp_wiki
         cd tmp_wiki
         git submodule update --init --recursive
