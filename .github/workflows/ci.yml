@@ -44,4 +44,7 @@ jobs:
         composer phpunit
 
     - name: Normalize composer.local.json
-      run: cd mediawiki && composer install && composer test
+      run: |
+        cd mediawiki
+        composer install
+        composer test
