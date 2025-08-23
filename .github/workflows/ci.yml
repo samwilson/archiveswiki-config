@@ -18,7 +18,7 @@ jobs:
       mysql:
         image: mysql:8.4
         env:
-          MYSQL_DATABASE: wikitestdb
+          MYSQL_DATABASE: my_wiki
           MYSQL_ROOT_PASSWORD: testpwd
         ports:
           - '3306:3306'
@@ -37,5 +37,5 @@ jobs:
         git submodule update --init --recursive
         ln -s ../mediawiki/composer.local.json composer.local.json
         composer update
-        php maintenance/run.php install --dbname=wikitestdb --dbpass=testpwd --dbuser=dev --pass test123test --with-extensions TestWiki Admin
+        php maintenance/run.php install --dbpass=testpwd --dbuser=root --pass=admin123admin --with-extensions TestWiki Admin
         composer phpunit
