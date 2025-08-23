@@ -27,18 +27,15 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: Composer install
-      run: cd mediawiki && composer install
+    - name: Composer
+      run: cd mediawiki && composer install && composer test
 
-    - name: Composer test
-      run: cd mediawiki && composer test
-
-    - name: MediaWiki install and test
+    - name: MediaWiki
       run: |
         git clone https://gerrit.wikimedia.org/r/mediawiki/core.git --depth=1 --branch=REL1_44 tmp_wiki
         cd tmp_wiki
         git submodule update --init --recursive
         ln -s ../mediawiki/composer.local.json composer.local.json
         composer update
-        php maintenance/run.php install --dbname=wikitestdb --dbpass=testpwd --dbserver=127.0.0.1 --dbuser=dev --pass test123test --with-extensions TestWiki Admin
+        php maintenance/run.php install --dbname=wikitestdb --dbpass=testpwd --dbuser=dev --pass test123test --with-extensions TestWiki Admin
         composer phpunit
