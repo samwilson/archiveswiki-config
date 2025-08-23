@@ -40,6 +40,7 @@ jobs:
         composer update
         php maintenance/run.php install --dbpass=testpwd --dbuser=root --dbserver=127.0.0.1 --with-developmentsettings --with-extensions --dbprefix=ci --pass=admin123admin TestWiki Admin
         ls -la
+        echo '$wgTmpDirectory = $IP . '/images/tmp-' . php_sapi_name();' >> LocalSettings.php
         cat LocalSettings.php
         ./vendor/bin/phpunit --testdox
 
