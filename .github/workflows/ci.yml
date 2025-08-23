@@ -38,14 +38,14 @@ jobs:
         cd tmp_wiki
         ln -s ../mediawiki/composer.local.json composer.local.json
         composer update
-        php maintenance/run.php install --dbpass=testpwd --dbuser=root --dbserver=127.0.0.1 --with-developmentsettings --with-extensions --dbprefix=ci --pass=admin123admin TestWiki Admin
+        php maintenance/run.php install --dbpass=testpwd --dbuser=root --dbserver=127.0.0.1 --with-extensions --dbprefix=ci --pass=admin123admin TestWiki Admin
         echo '$wgTmpDirectory = $IP . "/images/tmp";' >> LocalSettings.php
         mkdir ./images/tmp
         echo 'wfTempDir();' | ./maintenance/run shell
         cat LocalSettings.php
         ls -la
         ls -la ./images
-        ./vendor/bin/phpunit --testdox
+        ./vendor/bin/phpunit --verbose
 
     - name: Normalize composer.local.json
       run: |
