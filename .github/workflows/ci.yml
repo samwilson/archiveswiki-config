@@ -27,14 +27,16 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: Composer
-      run: cd mediawiki && composer install && composer test
-
-    - name: MediaWiki
+    - name: Run MediaWiki tests
       run: |
         git clone https://gerrit.wikimedia.org/r/mediawiki/core.git --recursive --shallow-submodules --depth=1 --branch=REL1_44 tmp_wiki
         cd tmp_wiki
         ln -s ../mediawiki/composer.local.json composer.local.json
         composer update
         php maintenance/run.php install --dbpass=testpwd --dbuser=root --dbserver=127.0.0.1 --with-developmentsettings --with-extensions --pass=admin123admin TestWiki Admin
+        ls -la
+        cat LocalSettings.php
         composer phpunit
+
+    - name: Normalize composer.local.json
+      run: cd mediawiki && composer install && composer test
