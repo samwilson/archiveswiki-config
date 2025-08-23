@@ -9,7 +9,7 @@
 		"mediawiki/maps": "^12",
 		"mediawiki/matomo": "^5.0",
 		"mediawiki/page-forms": "^6",
-		"octfx/wiki-seo": "^2.7",
+		"octfx/wiki-seo": "dev-REL1_44",
 		"samwilson/diagrams": "^0.15",
 		"samwilson/mediawiki-extensions-genealogy": "^2.0",
 		"samwilson/missedpages": "dev-master",
