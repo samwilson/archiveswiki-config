@@ -41,7 +41,7 @@ jobs:
         php maintenance/run.php install --dbpass=testpwd --dbuser=root --dbserver=127.0.0.1 --with-developmentsettings --with-extensions --pass=admin123admin TestWiki Admin
         ls -la
         cat LocalSettings.php
-        composer phpunit -vv
+        composer phpunit -vvv
 
     - name: Normalize composer.local.json
       run: |
