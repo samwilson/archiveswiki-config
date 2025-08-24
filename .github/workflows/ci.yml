@@ -37,6 +37,7 @@ jobs:
         git clone https://gerrit.wikimedia.org/r/mediawiki/core.git --recursive --shallow-submodules --depth=1 --branch=REL1_44 tmp_wiki
         cd tmp_wiki
         composer update
+        ls -l extensions/*
         php maintenance/run.php install --dbpass=testpwd --dbuser=root --dbserver=127.0.0.1 --skins=Vector --dbprefix=ci --pass=admin123admin TestWiki Admin
         echo 'require_once "../mediawiki/LocalSettings-tests.php";' >> LocalSettings.php
         cat LocalSettings.php
