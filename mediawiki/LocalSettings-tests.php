@@ -1,5 +1,8 @@
 <?php
 
+// T402728
+class_alias( \MediaWiki\Title\Title::class, 'Title' );
+
 $wgUseInstantCommons = true;
 
 wfLoadExtension( 'AWS' );
