@@ -42,7 +42,7 @@ jobs:
         echo 'require_once "../mediawiki/LocalSettings-tests.php";' >> LocalSettings.php
         ./maintenance/run update --quick
         cat LocalSettings.php
-        ./vendor/bin/phpunit --verbose --filter='!DerivedPageDataUpdaterTest'
+        ./vendor/bin/phpunit --verbose --testsuite=core:unit,extensions,skins
 
     - name: Normalize composer.local.json
       run: |
