@@ -3,6 +3,7 @@
 		"christian-riesen/base32": "^1.4.0",
 		"edwardspec/mediawiki-aws-s3": "dev-master",
 		"gesinn-it/qrlite": "dev-master",
+		"endroid/qr-code": "^5",
 		"jakobo/hotp-php": "2.0.0",
 		"mediawiki/cargo": "^3.0",
 		"mediawiki/data-transfer": "^1.0",
