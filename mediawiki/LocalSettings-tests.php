@@ -25,7 +25,6 @@ wfLoadExtension( 'Interwiki' );
 wfLoadExtension( 'LastUserLogin' );
 wfLoadExtension( 'LinkCards' );
 wfLoadExtension( 'Maps' );
-wfLoadExtension( 'Matomo' );
 wfLoadExtension( 'MsUpload' );
 wfLoadExtension( 'MultimediaViewer' );
 wfLoadExtension( 'NoCat' );
