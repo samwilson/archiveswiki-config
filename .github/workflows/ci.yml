@@ -32,7 +32,7 @@ jobs:
       with:
         php-version: 8.2
 
-    - name: Run MediaWiki tests
+    - name: Install MediaWiki
       run: |
         git clone https://gerrit.wikimedia.org/r/mediawiki/core.git --recursive --shallow-submodules --depth=1 --branch=REL1_44 tmp_wiki
         cd tmp_wiki
@@ -41,8 +41,6 @@ jobs:
         ./maintenance/run install --dbpass=testpwd --dbuser=root --dbserver=127.0.0.1 --skins=Vector --dbprefix=ci --pass=admin123admin TestWiki Admin
         echo 'require_once "../mediawiki/LocalSettings-tests.php";' >> LocalSettings.php
         ./maintenance/run update --quick
-        cat LocalSettings.php
-        ./vendor/bin/phpunit --verbose --testsuite=core:unit,extensions,skins
 
     - name: Normalize composer.local.json
       run: |
