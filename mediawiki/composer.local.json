@@ -1,6 +1,5 @@
 {
 	"require": {
-		"aws/aws-sdk-php": "^3",
 		"christian-riesen/base32": "^1.4.0",
 		"edwardspec/mediawiki-aws-s3": "dev-master",
 		"endroid/qr-code": "^4 || ^5",
@@ -11,9 +10,7 @@
 		"mediawiki/maps": "^12",
 		"mediawiki/matomo": "^5.0",
 		"mediawiki/page-forms": "^6",
-		"mediawiki/parser-hooks": "^1.5",
 		"octfx/wiki-seo": "dev-master",
-		"param-processor/param-processor": "^1.10",
 		"samwilson/diagrams": "^0.15",
 		"samwilson/mediawiki-extensions-genealogy": "^2.0",
 		"samwilson/missedpages": "dev-master",
