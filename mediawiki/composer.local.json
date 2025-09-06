@@ -9,6 +9,7 @@
 		"mediawiki/cargo": "^3.0",
 		"mediawiki/data-transfer": "^1.0",
 		"mediawiki/maps": "^12",
+		"mediawiki/matomo": "^5.0",
 		"mediawiki/page-forms": "^6",
 		"mediawiki/parser-hooks": "^1.5",
 		"octfx/wiki-seo": "dev-master",
