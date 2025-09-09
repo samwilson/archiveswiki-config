@@ -6,28 +6,25 @@
 		"jakobo/hotp-php": "2.0.0",
 		"mediawiki/cargo": "^3.0",
 		"mediawiki/data-transfer": "^1.0",
-		"mediawiki/maps": "^11.0",
+		"mediawiki/maps": "^12",
 		"mediawiki/matomo": "^5.0",
-		"mediawiki/page-forms": "^5.0",
-		"octfx/wiki-seo": "^2.6",
-		"samwilson/diagrams": "^0.14",
-		"samwilson/flickr-importer": "^0.2",
+		"mediawiki/page-forms": "^6",
+		"octfx/wiki-seo": "dev-master",
+		"samwilson/diagrams": "^0.15",
 		"samwilson/mediawiki-extensions-genealogy": "^2.0",
 		"samwilson/missedpages": "dev-master",
 		"samwilson/redirectmanager": "^1.0",
 		"samwilson/unlinked-wikibase": "^3.0",
-		"wikimedia-au/link-cards": "^0.9",
-		"wikimedia/css-sanitizer": "^5.0",
+		"wikimedia-au/link-cards": "^1",
+		"wikimedia/css-sanitizer": "^5 || ^6",
 		"x-mediawiki/code-mirror": "^1",
 		"x-mediawiki/display-title": "^1",
-		"x-mediawiki/gadgets": "^1",
 		"x-mediawiki/intersection": "^1",
 		"x-mediawiki/last-user-login": "^1",
 		"x-mediawiki/ms-upload": "^1",
 		"x-mediawiki/no-cat": "^1",
 		"x-mediawiki/real-me": "^1",
 		"x-mediawiki/renameuser": "^1",
-		"x-mediawiki/template-styles": "^1",
 		"x-mediawiki/template-wizard": "^1",
 		"x-mediawiki/title-key": "^1"
 	},
@@ -37,11 +34,11 @@
 			"package": {
 				"name": "x-mediawiki/no-cat",
 				"type": "mediawiki-extension",
-				"version": "1.43.0",
+				"version": "1.44.0",
 				"source": {
 					"type": "git",
 					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/NoCat.git",
-					"reference": "REL1_43"
+					"reference": "REL1_44"
 				}
 			}
 		},
@@ -50,11 +47,11 @@
 			"package": {
 				"name": "x-mediawiki/real-me",
 				"type": "mediawiki-extension",
-				"version": "1.43.0",
+				"version": "1.44.0",
 				"source": {
 					"type": "git",
 					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/RealMe.git",
-					"reference": "REL1_43"
+					"reference": "REL1_44"
 				}
 			}
 		},
@@ -63,11 +60,11 @@
 			"package": {
 				"name": "x-mediawiki/renameuser",
 				"type": "mediawiki-extension",
-				"version": "1.43.0",
+				"version": "1.44.0",
 				"source": {
 					"type": "git",
 					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/Renameuser.git",
-					"reference": "REL1_43"
+					"reference": "REL1_44"
 				}
 			}
 		},
@@ -76,11 +73,11 @@
 			"package": {
 				"name": "x-mediawiki/last-user-login",
 				"type": "mediawiki-extension",
-				"version": "1.43.0",
+				"version": "1.44.0",
 				"source": {
 					"type": "git",
 					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/LastUserLogin.git",
-					"reference": "REL1_43"
+					"reference": "REL1_44"
 				}
 			}
 		},
@@ -89,24 +86,11 @@
 			"package": {
 				"name": "x-mediawiki/ms-upload",
 				"type": "mediawiki-extension",
-				"version": "1.43.0",
+				"version": "1.44.0",
 				"source": {
 					"type": "git",
 					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/MsUpload.git",
-					"reference": "REL1_43"
-				}
-			}
-		},
-		{
-			"type": "package",
-			"package": {
-				"name": "x-mediawiki/template-styles",
-				"type": "mediawiki-extension",
-				"version": "1.40.1",
-				"source": {
-					"type": "git",
-					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/TemplateStyles.git",
-					"reference": "REL1_43"
+					"reference": "REL1_44"
 				}
 			}
 		},
@@ -115,11 +99,11 @@
 			"package": {
 				"name": "x-mediawiki/title-key",
 				"type": "mediawiki-extension",
-				"version": "1.43.0",
+				"version": "1.44.0",
 				"source": {
 					"type": "git",
 					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/TitleKey.git",
-					"reference": "REL1_43"
+					"reference": "REL1_44"
 				}
 			}
 		},
@@ -128,11 +112,11 @@
 			"package": {
 				"name": "x-mediawiki/intersection",
 				"type": "mediawiki-extension",
-				"version": "1.43.0",
+				"version": "1.44.0",
 				"source": {
 					"type": "git",
 					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/intersection.git",
-					"reference": "REL1_43"
+					"reference": "REL1_44"
 				}
 			}
 		},
@@ -141,24 +125,11 @@
 			"package": {
 				"name": "x-mediawiki/display-title",
 				"type": "mediawiki-extension",
-				"version": "1.43.0",
+				"version": "1.44.0",
 				"source": {
 					"type": "git",
 					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/DisplayTitle.git",
-					"reference": "REL1_43"
-				}
-			}
-		},
-		{
-			"type": "package",
-			"package": {
-				"name": "x-mediawiki/gadgets",
-				"type": "mediawiki-extension",
-				"version": "1.43.0",
-				"source": {
-					"type": "git",
-					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/Gadgets.git",
-					"reference": "REL1_43"
+					"reference": "REL1_44"
 				}
 			}
 		},
@@ -167,11 +138,11 @@
 			"package": {
 				"name": "x-mediawiki/template-wizard",
 				"type": "mediawiki-extension",
-				"version": "1.43.0",
+				"version": "1.44.0",
 				"source": {
 					"type": "git",
 					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/TemplateWizard.git",
-					"reference": "REL1_43"
+					"reference": "REL1_44"
 				}
 			}
 		},
@@ -180,11 +151,11 @@
 			"package": {
 				"name": "x-mediawiki/code-mirror",
 				"type": "mediawiki-extension",
-				"version": "1.43.0",
+				"version": "1.44.0",
 				"source": {
 					"type": "git",
 					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/CodeMirror.git",
-					"reference": "REL1_43"
+					"reference": "REL1_44"
 				}
 			}
 		}
