@@ -2,7 +2,6 @@
 	"require": {
 		"christian-riesen/base32": "^1.4.0",
 		"edwardspec/mediawiki-aws-s3": "dev-master",
-		"endroid/qr-code": "^4 || ^5",
 		"gesinn-it/qrlite": "dev-master",
 		"jakobo/hotp-php": "2.0.0",
 		"mediawiki/cargo": "^3.0",
