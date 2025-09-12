@@ -3,7 +3,7 @@
 Configuration files and other assets for some wikis:
 
 * [ArchivesWiki](https://archives.org.au)
-* [FreoWiki](https://freo.wiki)
+* [Freopedia](https://freopedia.org)
 
 [![CI](https://github.com/samwilson/archiveswiki-config/actions/workflows/ci.yml/badge.svg)](https://github.com/samwilson/archiveswiki-config/actions/workflows/ci.yml)
 
@@ -31,6 +31,10 @@ There's no need to update the `^1` version number in `require` because MediaWiki
 
 Checkout the new version of core, e.g. `git checkout 1.44.0`
 
+Reset previous modifications to `vendor/` (which is annoyingly managed as a submodule): `git submodule foreach git reset --hard`
+
 Update submodules: `git submodule update --init --recursive`
 
 Install Composer dependencies: `composer update --no-dev -o`
+
+Run the update script for each wiki, e.g.: `php ./maintenance/run update --wiki archiveswiki`
