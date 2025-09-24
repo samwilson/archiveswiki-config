@@ -18,6 +18,7 @@
 		"wikimedia-au/link-cards": "^1",
 		"wikimedia/css-sanitizer": "^5 || ^6",
 		"x-mediawiki/code-mirror": "^1",
+		"x-mediawiki/confirm-account": "^1",
 		"x-mediawiki/display-title": "^1",
 		"x-mediawiki/intersection": "^1",
 		"x-mediawiki/last-user-login": "^1",
@@ -155,6 +156,19 @@
 				"source": {
 					"type": "git",
 					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/CodeMirror.git",
+					"reference": "REL1_44"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "x-mediawiki/confirm-account",
+				"type": "mediawiki-extension",
+				"version": "1.44.0",
+				"source": {
+					"type": "git",
+					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/ConfirmAccount.git",
 					"reference": "REL1_44"
 				}
 			}
