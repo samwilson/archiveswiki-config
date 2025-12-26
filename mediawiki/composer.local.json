@@ -11,7 +11,7 @@
 		"mediawiki/page-forms": "^6",
 		"octfx/wiki-seo": "dev-master",
 		"samwilson/diagrams": "^0.15",
-		"samwilson/flickr-importer": "^0.4",
+		"samwilson/flickr-importer": "dev-master",
 		"samwilson/mediawiki-extensions-genealogy": "^2.0",
 		"samwilson/missedpages": "dev-master",
 		"samwilson/redirectmanager": "^1.0",
