@@ -15,8 +15,7 @@ Symlinks:
 
 ```console
 ln -s /srv/archiveswiki-config/composer.local.json /var/www/mediawiki/composer.local.json
-ln -s /srv/archiveswiki-config/jobrunner/mediawiki-jobs.service /etc/systemd/system/mediawiki-jobs.service
-ln -s /srv/archiveswiki-config/jobrunner/mediawiki-jobs@.service /etc/systemd/system/mediawiki-jobs@.service
+ln -s /srv/archiveswiki-config/jobrunner/mediawiki-jobs* /etc/systemd/system/.
 ```
 
 Start the services with:
