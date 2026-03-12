@@ -1,0 +1,16 @@
+[Unit]
+Description=MediaWiki job runner for %i
+PartOf=mediawiki-jobs.target
+
+[Service]
+Environment="WIKI=%i"
+ExecStart=/srv/archiveswiki-config/jobrunner/mediawiki_jobrunner.sh %i
+Nice=10
+ProtectSystem=full
+User=www-data
+OOMScoreAdjust=200
+StandardOutput=journal
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

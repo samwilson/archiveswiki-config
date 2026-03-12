@@ -1,0 +1,12 @@
+[Unit]
+Description=MediaWiki job runners
+Requires=mediawiki-jobs@archiveswiki.service \
+         mediawiki-jobs@cfbarchives.service \
+         mediawiki-jobs@bpwfmaily.service \
+         mediawiki-jobs@fiferarchives.service \
+         mediawiki-jobs@freopedia.service \
+         mediawiki-jobs@hmwarchives.service \
+         mediawiki-jobs@sw_wiki.service
+
+[Install]
+WantedBy=multi-user.target
