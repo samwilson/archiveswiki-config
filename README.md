@@ -21,7 +21,15 @@ ln -s /srv/archiveswiki-config/jobrunner/mediawiki-jobs* /etc/systemd/system/.
 Start the services with:
 
 ```console
-sudo systemctl start mediawiki-jobs.service
+sudo systemctl enable mediawiki-jobs.target
+sudo systemctl start mediawiki-jobs.target
+```
+
+Check status or logs with:
+
+```console
+sudo systemctl status mediawiki-jobs.target
+sudo journalctl -u mediawiki-jobs@<wiki_id>
 ```
 
 ## Upgrading
