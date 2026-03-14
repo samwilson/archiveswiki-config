@@ -2,7 +2,7 @@
 Description=MediaWiki job runners
 Requires=mediawiki-jobs@archiveswiki.service \
          mediawiki-jobs@cfbarchives.service \
-         mediawiki-jobs@bpwfmaily.service \
+         mediawiki-jobs@bpwfamily.service \
          mediawiki-jobs@fiferarchives.service \
          mediawiki-jobs@freopedia.service \
          mediawiki-jobs@hmwarchives.service \
