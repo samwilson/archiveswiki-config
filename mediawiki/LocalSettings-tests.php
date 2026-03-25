@@ -3,7 +3,7 @@
 // T402728
 class_alias( \MediaWiki\Title\Title::class, 'Title' );
 
-$wgUseInstantCommons = true;
+$wgUseQuickInstantCommons = false;
 
 wfLoadExtension( 'AWS' );
 wfLoadExtension( 'Cargo' );
