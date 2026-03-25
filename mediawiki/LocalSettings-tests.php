@@ -3,7 +3,7 @@
 // T402728
 class_alias( \MediaWiki\Title\Title::class, 'Title' );
 
-$wgUseInstantCommons = true;
+$wgUseQuickInstantCommons = false;
 
 wfLoadExtension( 'AWS' );
 wfLoadExtension( 'Cargo' );
@@ -32,6 +32,7 @@ wfLoadExtension( 'OATHAuth' );
 wfLoadExtension( 'PageForms' );
 wfLoadExtension( 'ParserFunctions' );
 wfLoadExtension( 'PdfHandler' );
+wfLoadExtension( 'QuickInstantCommons' );
 wfLoadExtension( 'QRLite' );
 wfLoadExtension( 'RealMe' );
 wfLoadExtension( 'RedirectManager' );

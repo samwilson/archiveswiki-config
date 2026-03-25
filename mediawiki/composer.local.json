@@ -25,6 +25,7 @@
 		"x-mediawiki/last-user-login": "^1",
 		"x-mediawiki/ms-upload": "^1",
 		"x-mediawiki/no-cat": "^1",
+		"x-mediawiki/quick-instant-commons": "^1",
 		"x-mediawiki/real-me": "^1",
 		"x-mediawiki/renameuser": "^1",
 		"x-mediawiki/template-wizard": "^1",
@@ -40,6 +41,19 @@
 				"source": {
 					"type": "git",
 					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/NoCat.git",
+					"reference": "REL1_44"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "x-mediawiki/quick-instant-commons",
+				"type": "mediawiki-extension",
+				"version": "1.44.0",
+				"source": {
+					"type": "git",
+					"url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/QuickInstantCommons.git",
 					"reference": "REL1_44"
 				}
 			}
