@@ -32,6 +32,7 @@ wfLoadExtension( 'OATHAuth' );
 wfLoadExtension( 'PageForms' );
 wfLoadExtension( 'ParserFunctions' );
 wfLoadExtension( 'PdfHandler' );
+wfLoadExtension( 'QuickInstantCommons' );
 wfLoadExtension( 'QRLite' );
 wfLoadExtension( 'RealMe' );
 wfLoadExtension( 'RedirectManager' );
