@@ -21,7 +21,6 @@ wfLoadExtension( 'Genealogy' );
 wfLoadExtension( 'ImageMap' );
 wfLoadExtension( 'InputBox' );
 wfLoadExtension( 'Intersection' );
-wfLoadExtension( 'Interwiki' );
 wfLoadExtension( 'LastUserLogin' );
 wfLoadExtension( 'LinkCards' );
 wfLoadExtension( 'Maps' );
