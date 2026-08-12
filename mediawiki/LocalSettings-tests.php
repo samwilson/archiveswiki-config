@@ -1,8 +1,5 @@
 <?php
 
-// T402728
-class_alias( \MediaWiki\Title\Title::class, 'Title' );
-
 $wgUseQuickInstantCommons = false;
 
 wfLoadExtension( 'AWS' );
@@ -24,6 +21,7 @@ wfLoadExtension( 'Intersection' );
 wfLoadExtension( 'LastUserLogin' );
 wfLoadExtension( 'LinkCards' );
 wfLoadExtension( 'Maps' );
+wfLoadExtension( 'MatomoAnalytics' );
 wfLoadExtension( 'MsUpload' );
 wfLoadExtension( 'MultimediaViewer' );
 wfLoadExtension( 'NoCat' );
