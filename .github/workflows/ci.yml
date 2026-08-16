@@ -41,6 +41,7 @@ jobs:
         ./maintenance/run install --dbpass=testpwd --dbuser=root --dbserver=127.0.0.1 --skins=Vector --dbprefix=ci --pass=admin123admin TestWiki Admin
         echo 'require_once "../mediawiki/LocalSettings-tests.php";' >> LocalSettings.php
         ./maintenance/run update --quick
+        sudo -u www-data composer phpunit -- --stop-on-failure --stop-on-error
 
     - name: Normalize composer.local.json
       run: |
