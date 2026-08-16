@@ -35,12 +35,17 @@ jobs:
     - name: Install MediaWiki
       run: |
         git clone https://gerrit.wikimedia.org/r/mediawiki/core.git --recursive --shallow-submodules --depth=1 --branch=REL1_45 tmp_wiki
+        chown -R www-data:www-data tmp_wiki
         cd tmp_wiki
-        ln -s ../mediawiki/composer.local.json composer.local.json
-        composer update
-        ./maintenance/run install --dbpass=testpwd --dbuser=root --dbserver=127.0.0.1 --skins=Vector --dbprefix=ci --pass=admin123admin TestWiki Admin
-        echo 'require_once "../mediawiki/LocalSettings-tests.php";' >> LocalSettings.php
-        ./maintenance/run update --quick
+        sudo -u www-data ln -s ../mediawiki/composer.local.json composer.local.json
+        sudo -u www-data composer update
+        sudo -u www-data ./maintenance/run install --dbpass=testpwd --dbuser=root --dbserver=127.0.0.1 --skins=Vector --dbprefix=ci --pass=admin123admin TestWiki Admin
+        sudo -u www-data echo 'require_once "../mediawiki/LocalSettings-tests.php";' >> LocalSettings.php
+        sudo -u www-data ./maintenance/run update --quick
+
+    - name: Run PHPUnit tests
+      run: |
+        cd tmp_wiki
         sudo -u www-data composer phpunit -- --stop-on-failure --stop-on-error
 
     - name: Normalize composer.local.json
