@@ -46,7 +46,7 @@ jobs:
       continue-on-error: true
       run: |
         cd tmp_wiki
-        composer phpunit
+        composer phpunit -- --stop-on-failure --stop-on-error
 
     - name: Normalize composer.local.json
       run: |
